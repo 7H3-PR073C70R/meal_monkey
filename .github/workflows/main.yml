@@ -1,0 +1,57 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the dev branch
+  push:
+    branches: [ dev, main ]
+  pull_request:
+    branches: [ dev, main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  flutter_test:
+    # This job will run on windows virtual machine
+    runs-on: windows-latest
+
+    steps:
+      # The branch or tag ref that triggered the workflow will be checked out.
+#         https://github.com/actions/checkout
+        - uses: actions/checkout@v1
+        # Setup the flutter environment.
+        - uses: subosito/flutter-action@v1
+          with:
+            channel: 'dev' # 'dev', 'alpha', default to: 'stable'
+            flutter-version: '2.6.x' # you can also specify exact version of flutter
+        - run: flutter doctor -v
+        - run: flutter clean
+        - run: flutter pub get
+        - run: flutter format .
+        - run: flutter analyze
+        - run: flutter test
+        
+#   build_apk:
+#     name: Build Flutter (Android)
+#     needs: [flutter_test]
+#     runs-on: ubuntu-latest
+#     steps:
+#       # The branch or tag ref that triggered the workflow will be checked out.
+#         # https://github.com/actions/checkout
+#         - uses: actions/checkout@v1
+#         # Setup the flutter environment.
+#         - uses: subosito/flutter-action@v1
+#           with:
+#             channel: 'dev' # 'dev', 'alpha', default to: 'stable'
+#             flutter-version: '2.6.x' # you can also specify exact version of flutter
+#         - run: flutter doctor -v
+#         - run: flutter clean
+#         - run: flutter pub get
+#         - run: flutter pub run build_runner build --delete-conflicting-outputs
+#         - run: flutter format .
+#         - run: flutter build apk
+
