@@ -22,9 +22,9 @@ class NotificationCard extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(notificationTitle, style: AppTextStyle.bodyOneTextStyle),
+            Text(notificationTitle, style: AppTextStyle.bodyOneTextStyle,),
             AppSize.verticalSpaceSmall,
-            Text(notificationTime, style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor)),
+            Text(notificationTime, style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor),),
           ],
         ),
       ],

@@ -18,10 +18,10 @@ class AppDescriptionAndText extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: AppTextStyle.headerTwoTextStyle),
+        Text(title, style: AppTextStyle.headerTwoTextStyle,),
         AppSize.verticalSpaceSmall,
         Text(description, 
-        style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor, fontWeight: FontWeight.w100),
+        style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor, fontWeight: FontWeight.w100,),
         )],
     );
   }
