@@ -54,14 +54,14 @@ class AppMenuOption extends StatelessWidget {
                 Text(description,
                     style: AppTextStyle.bodyTwoTextStyle.copyWith(
                         color: AppColors.greyColor,
-                        fontWeight: FontWeight.w100)),
+                        fontWeight: FontWeight.w100,),),
               ],
             ),
           ),
         ),
         Positioned(
           left: 0,
-          child: image
+          child: image,
         ),
         Positioned(
             right: 10,
@@ -81,7 +81,7 @@ class AppMenuOption extends StatelessWidget {
                 ],
               ),
               child: const Icon(Icons.arrow_forward_ios),
-            ))
+            ),)
       ],
     );
   }

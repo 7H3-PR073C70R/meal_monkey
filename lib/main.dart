@@ -65,7 +65,7 @@ class _AppHomePageState extends State<AppHomePage> {
           child: Column(
             children: [
               AppSize.verticalSpaceMedium,
-              AppDescriptionAndText(
+             const AppDescriptionAndText(
                 title: 'Welcome to Meal Monkey',
                 description:
                     'Meal Monkey is a food ordering app that helps you to order food from your favorite restaurants. You can order food from your favorite restaurants and get it delivered to your doorstep.',
@@ -84,18 +84,18 @@ class _AppHomePageState extends State<AppHomePage> {
                 ),
               ),
               AppSize.verticalSpaceMedium,
-              NotificationCard(
+             const NotificationCard(
                 notificationTitle: 'No oder has been picked up',
                 notificationTime: '12:00',
               ),
               AppSize.verticalSpaceMedium,
-              InboxCard(
+             const InboxCard(
                 title: 'Lorem ipsum',
                 description: 'Lorem ipsum sit ameraco',
                 date: '6th July',
               ),
               AppSize.verticalSpaceMedium,
-              RecentItemCard(
+            const  RecentItemCard(
                 foodName: 'Food Name',
                 foodDescription: 'Italy food',
                 foodRating: '4.9',

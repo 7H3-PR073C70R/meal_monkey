@@ -40,7 +40,7 @@ class RecentItemCard extends StatelessWidget {
           Text('Cafe . $foodDescription',
               style: AppTextStyle.bodyTwoTextStyle.copyWith(
                 color: AppColors.greyColor,
-              )),
+              ),),
           AppSize.verticalSpaceTiny,
           Row(
             children: [
@@ -51,15 +51,15 @@ class RecentItemCard extends StatelessWidget {
               ),
               Text(foodRating,
                   style: AppTextStyle.bodyTwoTextStyle
-                      .copyWith(color: AppColors.orange)),
+                      .copyWith(color: AppColors.orange),),
               AppSize.horizontalSpaceSmall,
               Text('($noOfRatings Ratings)',
                   style: AppTextStyle.bodyOneTextStyle
-                      .copyWith(color: AppColors.greyColor)),
+                      .copyWith(color: AppColors.greyColor),),
             ],
           ),
         ],
       ),
-    ]);
+    ],);
   }
 }

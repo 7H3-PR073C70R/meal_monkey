@@ -15,21 +15,19 @@ class NotificationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: [
-         const Icon(Icons.notifications, size: 20, color: AppColors.orange,),
-        AppSize.horizontalSpaceLarge,
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(notificationTitle, style: AppTextStyle.bodyOneTextStyle),
-              AppSize.verticalSpaceSmall,
-              Text(notificationTime, style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor)),
-            ],
-          ),
-        ],
-      ),
+    return Row(
+      children: [
+       const Icon(Icons.notifications, size: 20, color: AppColors.orange,),
+      AppSize.horizontalSpaceLarge,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(notificationTitle, style: AppTextStyle.bodyOneTextStyle),
+            AppSize.verticalSpaceSmall,
+            Text(notificationTime, style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor)),
+          ],
+        ),
+      ],
     );
   }
 }

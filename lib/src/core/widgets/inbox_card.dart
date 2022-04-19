@@ -29,11 +29,11 @@ class InboxCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(title,
-                style: AppTextStyle.bodyOneTextStyle),
+                style: AppTextStyle.bodyOneTextStyle,),
             AppSize.verticalSpaceSmall,
             Text(description,
                 style: AppTextStyle.bodyOneTextStyle
-                    .copyWith(color: AppColors.greyColor)),
+                    .copyWith(color: AppColors.greyColor),),
           ],
         ),
         const Spacer(),
@@ -43,7 +43,7 @@ class InboxCard extends StatelessWidget {
           children: [
             Text(date,
                 style: AppTextStyle.bodyTwoTextStyle
-                    .copyWith(color: AppColors.greyColor)),
+                    .copyWith(color: AppColors.greyColor),),
           const  Icon(
               Icons.star,
               size: 20,
