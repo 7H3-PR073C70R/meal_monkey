@@ -4,37 +4,37 @@ class AppTextStyle {
   AppTextStyle._();
   static const fontFamily = 'Metropolis';
 
-  TextStyle headerOneTextStyle = const TextStyle(
+ static const TextStyle headerOneTextStyle = TextStyle(
     fontSize: 22,
     fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
   );
 
-  TextStyle headerTwoTextStyle = const TextStyle(
+  static const TextStyle headerTwoTextStyle = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
   );
 
-  TextStyle headerThreeTextStyle = const TextStyle(
+  static const TextStyle headerThreeTextStyle = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
   );
 
-  TextStyle headerFourTextStyle = const TextStyle(
+  static const TextStyle headerFourTextStyle = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
   );
 
-  TextStyle bodyOneTextStyle = const TextStyle(
+  static const TextStyle bodyOneTextStyle = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
   );
 
-  TextStyle bodyTwoTextStyle = const TextStyle(
+  static const TextStyle bodyTwoTextStyle = TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w600,
     fontFamily: fontFamily,
