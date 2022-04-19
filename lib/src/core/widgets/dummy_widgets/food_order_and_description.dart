@@ -94,7 +94,12 @@ class FoodOrderAndDescription extends StatelessWidget {
                     color: AppColors.primary,
                     size: 20,
                   ),
-                  Text(address, style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor)),
+                  Text(
+                    address,
+                    style: AppTextStyle.bodyOneTextStyle.copyWith(
+                      color: AppColors.greyColor,
+                    ),
+                  ),
                 ],
               ),
             ],

@@ -76,7 +76,11 @@ class AppHomePage extends StatelessWidget {
                 AppSize.verticalSpaceSmall,
                 const Ratings(ratings: 1),
                 AppSize.verticalSpaceSmall,
-                TextAndSwitchButton(value: false, text: 'text', onChanged: (_) {}),
+                TextAndSwitchButton(
+                  value: false,
+                  text: 'text',
+                  onChanged: (_) {},
+                ),
               ],
             ),
           ),
