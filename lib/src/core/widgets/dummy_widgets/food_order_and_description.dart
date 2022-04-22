@@ -41,12 +41,12 @@ class FoodOrderAndDescription extends StatelessWidget {
               ),
             ),
           ),
-          AppSize.horizontalSpaceSmall,
+          AppSpacing.horizontalSpaceSmall,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(foodName, style: AppTextStyle.headerThreeTextStyle),
-              AppSize.verticalSpaceSmall,
+              AppSpacing.verticalSpaceSmall,
               Row(
                 children: [
                   const Icon(Icons.star, color: AppColors.primary),
@@ -66,7 +66,7 @@ class FoodOrderAndDescription extends StatelessWidget {
                   ),
                 ],
               ),
-              AppSize.verticalSpaceSmall,
+              AppSpacing.verticalSpaceSmall,
               RichText(
                 text: TextSpan(
                   style: AppTextStyle.bodyOneTextStyle
@@ -86,7 +86,7 @@ class FoodOrderAndDescription extends StatelessWidget {
                   ],
                 ),
               ),
-              AppSize.verticalSpaceSmall,
+              AppSpacing.verticalSpaceSmall,
               Row(
                 children: [
                   const Icon(

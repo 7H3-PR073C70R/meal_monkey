@@ -19,7 +19,7 @@ class AppDescriptionAndText extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(title, style: AppTextStyle.headerTwoTextStyle,),
-        AppSize.verticalSpaceSmall,
+        AppSpacing.verticalSpaceSmall,
         Text(description, 
         style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor, fontWeight: FontWeight.w100,),
         )],
