@@ -50,7 +50,7 @@ class AppMenuOption extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(title, style: AppTextStyle.headerOneTextStyle),
-                AppSize.horizontalSpaceSmall,
+                AppSpacing.horizontalSpaceSmall,
                 Text(description,
                     style: AppTextStyle.bodyTwoTextStyle.copyWith(
                         color: AppColors.greyColor,

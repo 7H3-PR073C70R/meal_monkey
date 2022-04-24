@@ -18,12 +18,12 @@ class NotificationCard extends StatelessWidget {
     return Row(
       children: [
        const Icon(Icons.notifications, size: 20, color: AppColors.orange,),
-      AppSize.horizontalSpaceLarge,
+      AppSpacing.horizontalSpaceLarge,
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(notificationTitle, style: AppTextStyle.bodyOneTextStyle,),
-            AppSize.verticalSpaceSmall,
+            AppSpacing.verticalSpaceSmall,
             Text(notificationTime, style: AppTextStyle.bodyOneTextStyle.copyWith(color: AppColors.greyColor),),
           ],
         ),

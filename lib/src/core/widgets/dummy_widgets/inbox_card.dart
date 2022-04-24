@@ -24,13 +24,13 @@ class InboxCard extends StatelessWidget {
           size: 20,
           color: AppColors.orange,
         ),
-        AppSize.horizontalSpaceLarge,
+        AppSpacing.horizontalSpaceLarge,
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(title,
                 style: AppTextStyle.bodyOneTextStyle,),
-            AppSize.verticalSpaceSmall,
+            AppSpacing.verticalSpaceSmall,
             Text(description,
                 style: AppTextStyle.bodyOneTextStyle
                     .copyWith(color: AppColors.greyColor),),

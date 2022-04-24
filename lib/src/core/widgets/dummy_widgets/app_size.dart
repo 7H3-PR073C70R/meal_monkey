@@ -1,9 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class AppSize {
-  AppSize._();
+class AppSpacing {
+  AppSpacing._();
 
   static const double defaultAppBarHeight = 56.0;
+  static double screenWidth(BuildContext context) => MediaQuery.of(context).size.width;
+  static double screenHeight(BuildContext context) => MediaQuery.of(context).size.height;
 
   // vertical space smaller than default
   static const verticalSpaceTiny = SizedBox(height: 5.0);

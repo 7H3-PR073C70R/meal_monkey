@@ -52,7 +52,7 @@ class DessertCard extends StatelessWidget {
                 style: AppTextStyle.headerThreeTextStyle
                     .copyWith(color: AppColors.kcWhiteColor),
               ),
-              AppSize.verticalSpaceSmall,
+              AppSpacing.verticalSpaceSmall,
               Row(
                 children: [
                   const Icon(

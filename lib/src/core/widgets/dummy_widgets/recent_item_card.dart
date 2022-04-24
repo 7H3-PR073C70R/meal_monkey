@@ -31,17 +31,17 @@ class RecentItemCard extends StatelessWidget {
           width: 70,
         ),
       ),
-      AppSize.horizontalSpaceLarge,
+      AppSpacing.horizontalSpaceLarge,
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(foodName, style: AppTextStyle.headerTwoTextStyle),
-          AppSize.verticalSpaceTiny,
+          AppSpacing.verticalSpaceTiny,
           Text('Cafe . $foodDescription',
               style: AppTextStyle.bodyTwoTextStyle.copyWith(
                 color: AppColors.greyColor,
               ),),
-          AppSize.verticalSpaceTiny,
+          AppSpacing.verticalSpaceTiny,
           Row(
             children: [
               const Icon(
@@ -52,7 +52,7 @@ class RecentItemCard extends StatelessWidget {
               Text(foodRating,
                   style: AppTextStyle.bodyTwoTextStyle
                       .copyWith(color: AppColors.orange),),
-              AppSize.horizontalSpaceSmall,
+              AppSpacing.horizontalSpaceSmall,
               Text('($noOfRatings Ratings)',
                   style: AppTextStyle.bodyOneTextStyle
                       .copyWith(color: AppColors.greyColor),),
