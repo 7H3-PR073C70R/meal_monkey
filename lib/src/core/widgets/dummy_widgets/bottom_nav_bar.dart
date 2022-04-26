@@ -68,7 +68,7 @@ class BottomNavBar extends StatelessWidget {
               isHome: index == 2,
               onTap: () => go(context, 2),
             ),
-          )
+          ),
         ],
       ),
     );
