@@ -22,7 +22,11 @@ class HomeNavigationBotton extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           boxShadow: const [
-            BoxShadow(color: AppColors.kcWhiteColor, blurRadius: 2, spreadRadius: 5),
+            BoxShadow(
+              color: AppColors.kcWhiteColor,
+              blurRadius: 2,
+              spreadRadius: 5,
+            ),
           ],
           color: isHome ? AppColors.primary : AppColors.greyColor,
         ),
