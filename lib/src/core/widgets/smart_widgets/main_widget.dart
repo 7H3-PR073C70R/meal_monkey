@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/bottom_nav_bar.dart';
+import 'package:meal_monkey/src/features/home/presentation/pages/home_page.dart';
 
-
-class HomePage extends StatefulWidget {
-  static const String path = '/home';
+class MainPage extends StatefulWidget {
+  static const String path = '/main';
   final int index;
-  const HomePage({Key? key, required this.index}) : super(key: key);
+  const MainPage({Key? key, required this.index}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,8 +22,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
 
 final List<Widget> pages = [
   Scaffold(
@@ -42,14 +40,7 @@ final List<Widget> pages = [
       child: Text('Page 2'),
     ),
   ),
-  Scaffold(
-    appBar: AppBar(
-      title: const Text('Meal Monkey'),
-    ),
-    body: const Center(
-      child: Text('Page 3'),
-    ),
-  ),
+  const HomePage(),
   Scaffold(
     appBar: AppBar(
       title: const Text('Meal Monkey'),
