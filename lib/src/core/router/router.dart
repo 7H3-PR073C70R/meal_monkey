@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:meal_monkey/src/core/widgets/smart_widgets/home_widget.dart';
+import 'package:meal_monkey/src/core/widgets/smart_widgets/main_widget.dart';
 
 class Routes {
   const Routes._();
@@ -8,12 +8,12 @@ class Routes {
         routes: [
           GoRoute(
             path: '/',
-            redirect: (_) => '${HomePage.path}/${2}',
+            redirect: (_) => '${MainPage.path}/${2}',
           ),
           GoRoute(
-            path: '${HomePage.path}/:id',
+            path: '${MainPage.path}/:id',
             builder: (context, state) => Material(
-              child: HomePage(
+              child: MainPage(
                 key: state.pageKey,
                 index: int.parse(state.params['id']!),
               ),

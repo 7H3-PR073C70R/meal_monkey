@@ -20,8 +20,8 @@ class SmallFoodCard extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 120,
-            width: 120,
+            height: 80,
+            width: 80,
             decoration: BoxDecoration(
               color: AppColors.greyColor,
               borderRadius: BorderRadius.circular(18),
@@ -34,7 +34,7 @@ class SmallFoodCard extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             name,
-            style: AppTextStyle.headerOneTextStyle,
+            style: AppTextStyle.headerFourTextStyle,
           )
         ],
       ),

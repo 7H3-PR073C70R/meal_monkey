@@ -6,6 +6,7 @@ import 'package:meal_monkey/src/core/constants/asset_path.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_size.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/home_nav_botton.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/nav_bar_item.dart';
+import 'package:meal_monkey/src/core/widgets/smart_widgets/main_widget.dart';
 
 class BottomNavBar extends StatelessWidget {
   final int index;
@@ -15,7 +16,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-         color: AppColors.kcWhiteColor,
+        color: AppColors.kcWhiteColor,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.2),
@@ -67,13 +68,13 @@ class BottomNavBar extends StatelessWidget {
               isHome: index == 2,
               onTap: () => go(context, 2),
             ),
-          )
+          ),
         ],
       ),
     );
   }
 
   void go(BuildContext context, int index) {
-    context.go('/home/$index');
+    context.go('${MainPage.path}/$index');
   }
 }

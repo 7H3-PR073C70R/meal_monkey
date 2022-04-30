@@ -24,7 +24,7 @@ class RecentItemCard extends StatelessWidget {
     return Row(children: [
       ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: Image.asset(
+        child: Image.network(
           foodImage,
           fit: BoxFit.cover,
           height: 70,
