@@ -5,7 +5,7 @@ import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_size.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_textstyles.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/button.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/custom_textfield.dart';
-import 'package:meal_monkey/src/features/auth/login/presentation/login_screen.dart';
+import 'package:meal_monkey/src/features/auth/login/presentation/pages/login_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
