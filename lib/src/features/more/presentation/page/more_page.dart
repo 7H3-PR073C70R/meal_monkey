@@ -33,7 +33,9 @@ class MorePage extends StatelessWidget {
                 MoreOptionCard(
                     text: AppString.myOrder,
                     icon: AssetPath.bagIcon,
-                    onTap: () {},),
+                    onTap: () {
+                        context.pushNamed('my-order');
+                    },),
                 MoreOptionCard(
                     text: AppString.notification,
                     icon: AssetPath.notificationIcon,
@@ -50,7 +52,9 @@ class MorePage extends StatelessWidget {
                 MoreOptionCard(
                     text: AppString.aboutUs,
                     icon: AssetPath.infoIcon,
-                    onTap: () {},),
+                    onTap: () {
+                       context.pushNamed('about');
+                    },),
               ],
             ),
           ),

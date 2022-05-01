@@ -9,6 +9,7 @@ class AppString {
   static const searchFood = 'Search food';
   static const currentLocation = 'Current Location';
   static const deliverTo = 'Deliver to';
+  static const sendOrder = 'Send Order';
 
 
   static const more = 'More';
