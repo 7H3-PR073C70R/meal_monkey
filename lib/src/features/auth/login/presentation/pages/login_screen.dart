@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                AppSize.verticalSpaceLarge,
+                AppSpacing.verticalSpaceLarge,
                 Text(
                   'Login',
                   style: AppTextStyle.headerOneTextStyle.copyWith(
@@ -27,7 +27,7 @@ class LoginScreen extends StatelessWidget {
                     fontSize: 25,
                   ),
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 Text(
                   'Add your details to login',
                   style: AppTextStyle.headerThreeTextStyle.copyWith(
@@ -35,15 +35,15 @@ class LoginScreen extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Your Email',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Password',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 Button(
                   color: AppColors.primary,
                   child: const Text(
@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   ontap: () {},
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 TextButton(
                   onPressed: () {},
                   child: const Text(
@@ -61,9 +61,9 @@ class LoginScreen extends StatelessWidget {
                     style: TextStyle(color: Colors.grey),
                   ),
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const Text('or Login With'),
-                AppSize.verticalSpaceSmall,
+                AppSpacing.verticalSpaceSmall,
                 Button(
                   color: AppColors.blueColor,
                   child: Row(
@@ -73,7 +73,7 @@ class LoginScreen extends StatelessWidget {
                         Icons.facebook_sharp,
                         color: Colors.white,
                       ),
-                      AppSize.horizontalSpaceSmall,
+                      AppSpacing.horizontalSpaceSmall,
                       Text(
                         AppString.loginWithFacebook,
                         style: TextStyle(color: Colors.white),
@@ -82,7 +82,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   ontap: () {},
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 Button(
                   color: AppColors.orange,
                   child: Row(
@@ -92,7 +92,7 @@ class LoginScreen extends StatelessWidget {
                         Icons.mail,
                         color: Colors.white,
                       ),
-                      AppSize.horizontalSpaceSmall,
+                      AppSpacing.horizontalSpaceSmall,
                       Text(
                         AppString.loginWithGoogle,
                         style: TextStyle(color: Colors.white),
@@ -101,13 +101,13 @@ class LoginScreen extends StatelessWidget {
                   ),
                   ontap: () {},
                 ),
-                AppSize.verticalSpaceLarge,
-                AppSize.verticalSpaceLarge,
+                AppSpacing.verticalSpaceLarge,
+                AppSpacing.verticalSpaceLarge,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text("Don't have an Account ?"),
-                    AppSize.horizontalSpaceTiny,
+                    AppSpacing.horizontalSpaceTiny,
                     TextButton(
                       onPressed: () {},
                       child: const Text(

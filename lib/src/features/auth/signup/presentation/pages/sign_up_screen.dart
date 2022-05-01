@@ -19,7 +19,7 @@ class SignUpScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                AppSize.verticalSpaceLarge,
+                AppSpacing.verticalSpaceLarge,
                 Text(
                   AppString.signUp,
                   style: AppTextStyle.headerOneTextStyle.copyWith(
@@ -28,7 +28,7 @@ class SignUpScreen extends StatelessWidget {
                     fontSize: 25,
                   ),
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 Text(
                   'Add your details to sign up',
                   style: AppTextStyle.headerThreeTextStyle.copyWith(
@@ -36,31 +36,31 @@ class SignUpScreen extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Name',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Email',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Mobile No',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Address',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Password',
                 ),
-                AppSize.verticalSpaceMedium,
+                AppSpacing.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: AppString.cornfirmPassword,
                 ),
-                AppSize.verticalSpaceLarge,
+                AppSpacing.verticalSpaceLarge,
                 Button(
                   color: AppColors.primary,
                   child: const Text(
@@ -70,12 +70,12 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   ontap: () {},
                 ),
-                AppSize.verticalSpaceLarge,
+                AppSpacing.verticalSpaceLarge,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text('Already have an Account?'),
-                    AppSize.horizontalSpaceTiny,
+                    AppSpacing.horizontalSpaceTiny,
                     TextButton(
                       onPressed: () {
                         Navigator.pushReplacement(

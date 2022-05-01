@@ -17,7 +17,7 @@ class PasswordConfirmationScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               Text(
                 AppString.newPassword,
                 style: AppTextStyle.headerOneTextStyle.copyWith(
@@ -26,7 +26,7 @@ class PasswordConfirmationScreen extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-              AppSize.verticalSpaceMedium,
+              AppSpacing.verticalSpaceMedium,
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
@@ -35,15 +35,15 @@ class PasswordConfirmationScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               const CustomTextField(
                 hintText: AppString.newPassword,
               ),
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               const CustomTextField(
                 hintText: AppString.cornfirmPassword,
               ),
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               Button(
                 color: AppColors.orange,
                 child: const Text(

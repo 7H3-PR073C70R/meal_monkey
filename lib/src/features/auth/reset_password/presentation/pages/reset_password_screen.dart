@@ -17,7 +17,7 @@ class ResetPasswordScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               Text(
                 AppString.resetPassword,
                 style: AppTextStyle.headerOneTextStyle.copyWith(
@@ -26,7 +26,7 @@ class ResetPasswordScreen extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-              AppSize.verticalSpaceMedium,
+              AppSpacing.verticalSpaceMedium,
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
@@ -34,11 +34,11 @@ class ResetPasswordScreen extends StatelessWidget {
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               const CustomTextField(
                 hintText: 'Email',
               ),
-              AppSize.verticalSpaceLarge,
+              AppSpacing.verticalSpaceLarge,
               Button(
                 color: AppColors.orange,
                 child: const Text(
