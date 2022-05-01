@@ -61,7 +61,10 @@ class PopularRestaurantCard extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
               ),
+
+
               AppSpacing.horizontalSpaceSmall,
+
               const Text(
                 'Western Food',
                 style: TextStyle(color: Colors.grey),
