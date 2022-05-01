@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey/src/core/constants/app_colors.dart';
+import 'package:meal_monkey/src/core/constants/strings.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_size.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_textstyles.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/button.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/custom_textfield.dart';
+import 'package:meal_monkey/src/features/auth/login/presentation/login_screen.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class LoginScreen extends StatelessWidget {
               children: [
                 AppSize.verticalSpaceLarge,
                 Text(
-                  'Login',
+                  AppString.signUp,
                   style: AppTextStyle.headerOneTextStyle.copyWith(
                     letterSpacing: 1,
                     fontWeight: FontWeight.w400,
@@ -28,7 +30,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 AppSize.verticalSpaceMedium,
                 Text(
-                  'Add your details to login',
+                  'Add your details to sign up',
                   style: AppTextStyle.headerThreeTextStyle.copyWith(
                     color: AppColors.greyColor,
                     fontWeight: FontWeight.normal,
@@ -36,82 +38,55 @@ class LoginScreen extends StatelessWidget {
                 ),
                 AppSize.verticalSpaceMedium,
                 const CustomTextField(
-                  hintText: 'Your Email',
+                  hintText: 'Name',
+                ),
+                AppSize.verticalSpaceMedium,
+                const CustomTextField(
+                  hintText: 'Email',
+                ),
+                AppSize.verticalSpaceMedium,
+                const CustomTextField(
+                  hintText: 'Mobile No',
+                ),
+                AppSize.verticalSpaceMedium,
+                const CustomTextField(
+                  hintText: 'Address',
                 ),
                 AppSize.verticalSpaceMedium,
                 const CustomTextField(
                   hintText: 'Password',
                 ),
                 AppSize.verticalSpaceMedium,
+                const CustomTextField(
+                  hintText: AppString.cornfirmPassword,
+                ),
+                AppSize.verticalSpaceLarge,
                 Button(
                   color: AppColors.primary,
                   child: const Text(
-                    'Login',
+                    AppString.signUp,
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white),
                   ),
                   ontap: () {},
                 ),
-                AppSize.verticalSpaceMedium,
-                TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Forgot your password?',
-                    style: TextStyle(color: AppColors.greyColor),
-                  ),
-                ),
-                AppSize.verticalSpaceMedium,
-                const Text('or Login With'),
-                AppSize.verticalSpaceSmall,
-                Button(
-                  color: AppColors.blueColor,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.facebook_sharp,
-                        color: Colors.white,
-                      ),
-                      AppSize.horizontalSpaceSmall,
-                      Text(
-                        'Login with Facebook',
-                        style: TextStyle(color: Colors.white),
-                      )
-                    ],
-                  ),
-                  ontap: () {},
-                ),
-                AppSize.verticalSpaceMedium,
-                Button(
-                  color: AppColors.orange,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        /// would update the icon to google icon
-                        Icons.mail,
-                        color: Colors.white,
-                      ),
-                      AppSize.horizontalSpaceSmall,
-                      Text(
-                        'Login with Google',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ],
-                  ),
-                  ontap: () {},
-                ),
-                AppSize.verticalSpaceLarge,
                 AppSize.verticalSpaceLarge,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text("Don't have an Account ?"),
+                    const Text('Already have an Account?'),
                     AppSize.horizontalSpaceTiny,
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (constext) => const LoginScreen(),
+                          ),
+                        );
+                      },
                       child: const Text(
-                        'SIgn Up',
+                        AppString.login,
                         style: TextStyle(color: AppColors.orange),
                       ),
                     )

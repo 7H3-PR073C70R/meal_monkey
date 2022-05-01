@@ -6,17 +6,20 @@ class CustomTextField extends StatelessWidget {
   final String? initialValue;
   final String? hintText;
   final IconData? prefixIcon;
+  final String? Function(String?)? validator;
   const CustomTextField({
     Key? key,
     this.controller,
     this.hintText,
     this.initialValue,
     this.prefixIcon,
+    this.validator,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: validator,
       controller: controller,
       initialValue: initialValue,
       cursorHeight: 25,

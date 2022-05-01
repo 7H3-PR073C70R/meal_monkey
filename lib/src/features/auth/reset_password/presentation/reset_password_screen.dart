@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey/src/core/constants/app_colors.dart';
+import 'package:meal_monkey/src/core/constants/strings.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_size.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_textstyles.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/button.dart';
@@ -18,7 +19,7 @@ class ResetPasswordScreen extends StatelessWidget {
             children: [
               AppSize.verticalSpaceLarge,
               Text(
-                'Reset Password',
+                AppString.resetPassword,
                 style: AppTextStyle.headerOneTextStyle.copyWith(
                   letterSpacing: 1,
                   fontWeight: FontWeight.w400,
@@ -29,7 +30,7 @@ class ResetPasswordScreen extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  'Please enter your email to recieve a mail to reset your password',
+                  AppString.resetPasswordInstruction,
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
