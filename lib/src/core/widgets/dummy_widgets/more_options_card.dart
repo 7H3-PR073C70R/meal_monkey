@@ -39,7 +39,9 @@ class MoreOptionCard extends StatelessWidget {
                     Icons.payment,
                   ),
                 ),
-                AppSize.horizontalSpaceLarge,
+
+                AppSpacing.horizontalSpaceLarge,
+
                 Text(
                   text,
                   style: AppTextStyle.headerTwoTextStyle,

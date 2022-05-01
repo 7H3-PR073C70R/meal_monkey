@@ -33,7 +33,7 @@ class PopularRestaurantCard extends StatelessWidget {
             ),
             height: MediaQuery.of(context).size.height * 0.23,
           ),
-          AppSize.verticalSpaceSmall,
+          AppSpacing.verticalSpaceSmall,
           Text(
             'Minute by tuk tuk',
             style: AppTextStyle.headerTwoTextStyle,
@@ -61,7 +61,10 @@ class PopularRestaurantCard extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
               ),
-              AppSize.horizontalSpaceSmall,
+
+
+              AppSpacing.horizontalSpaceSmall,
+
               const Text(
                 'Western Food',
                 style: TextStyle(color: Colors.grey),
