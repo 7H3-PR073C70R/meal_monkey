@@ -12,10 +12,16 @@ class AppString {
   static const sendOrder = 'Send Order';
 
 
+
   static const more = 'More';
   static const paymentDetails = 'Payment Details';
   static const myOrder = 'My Order';
   static const notification = 'Notifications';
   static const inbox = 'Inbox';
   static const aboutUs = 'About Us';
+
+  static const checkOut = 'Check Out';
+  static const addCard = 'Add Card';
+  static const paymentMethod = 'Payment Method';
+  static const cashOnDelivery = 'Cash on Delivery';
 }

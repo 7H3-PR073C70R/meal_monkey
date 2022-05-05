@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:meal_monkey/src/core/constants/app_colors.dart';
 import 'package:meal_monkey/src/core/constants/asset_path.dart';
 import 'package:meal_monkey/src/core/constants/strings.dart';
@@ -117,10 +118,12 @@ class MyOrderPage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Button(text: AppString.sendOrder,
+              child: Button(text: AppString.checkOut,
               color: AppColors.orange,
               textColor: AppColors.kcWhiteColor,
-               ontap: (){},),
+               ontap: (){
+                 context.pushNamed('checkout');
+               },),
             )
           ],
         ),

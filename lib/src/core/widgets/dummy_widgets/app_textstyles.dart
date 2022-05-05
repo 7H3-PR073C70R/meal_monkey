@@ -39,4 +39,9 @@ class AppTextStyle {
     fontWeight: FontWeight.w400,
     fontFamily: fontFamily,
   );
+
+  static TextStyle inputLabelStyle = const TextStyle(
+      fontSize: 16, fontWeight: FontWeight.normal, fontFamily: fontFamily,);
+
+
 }

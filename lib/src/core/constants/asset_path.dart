@@ -20,7 +20,7 @@ class AssetPath {
 
 
   static const ellipseIcon = 'assets/icons/Ellipse_icon.svg';
-  static const payPalIcon = 'assets/icons/paypal_icon.svg';
+  static const payPalIcon = 'assets/icons/paypal.png';
   static const plusIcon = 'assets/icons/plus_icon.svg';
-  static const visaIcon = 'assets/icons/visa_icon.svg';
+  static const visaIcon = 'assets/icons/visa.png';
 }
