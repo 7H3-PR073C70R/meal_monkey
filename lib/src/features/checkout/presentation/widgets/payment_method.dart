@@ -55,7 +55,7 @@ class PaymentMethod extends StatelessWidget {
                                   color: AppColors.greyModerateColor,
                                 ),
                                 AppSpacing.verticalSpaceSmall,
-                                AppInputField(
+                                const AppInputField(
                                   placeHolder: 'Card Number',
                                 ),
                                 AppSpacing.verticalSpaceLarge,

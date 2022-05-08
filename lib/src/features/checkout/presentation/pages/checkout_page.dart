@@ -27,7 +27,7 @@ class CheckoutPage extends StatelessWidget {
               child: DeliveryAddress(),
             ),
             _spaceContainer(),
-            PaymentMethod(),
+           const PaymentMethod(),
             _spaceContainer(),
             Padding(
               padding: const EdgeInsets.all(10.0),
