@@ -115,7 +115,7 @@ class PaymentMethod extends StatelessWidget {
                                       textAlign: TextAlign.center,
                                       style: AppTextStyle.headerThreeTextStyle
                                           .copyWith(
-                                              color: AppColors.kcWhiteColor),
+                                              color: AppColors.kcWhiteColor,),
                                     ),
                                   ),
                                 )
