@@ -16,4 +16,12 @@ class AssetPath {
   static const infoIcon = 'assets/icons/info_icon.svg';
   static const incomeIcon = 'assets/icons/income_icon.svg';
   static const bagIcon = 'assets/icons/bag_icon.svg';
+
+
+
+  static const ellipseIcon = 'assets/icons/Ellipse_icon.svg';
+  static const payPalIcon = 'assets/icons/paypal.png';
+  static const plusIcon = 'assets/icons/plus_icon.svg';
+  static const visaIcon = 'assets/icons/visa.png';
+  static const orderComplete = 'assets/images/order_complete.png';
 }

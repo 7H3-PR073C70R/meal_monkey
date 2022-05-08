@@ -10,47 +10,55 @@ class MorePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
- 
- final kh = MediaQuery.of(context).size.height;
+    final kh = MediaQuery.of(context).size.height;
 
     return Scaffold(
       body: Column(
         children: [
-         const AppCustomAppBar(
+          const AppCustomAppBar(
             title: AppString.more,
             isBackButton: false,
             icon: AssetPath.shoppingCartIcon,
-          
           ),
           SizedBox(
-            height: kh *0.75,
+            height: kh * 0.75,
             child: ListView(
               children: [
                 MoreOptionCard(
-                    text: AppString.paymentDetails,
-                    icon: AssetPath.incomeIcon,
-                    onTap: () {},),
+                  text: AppString.paymentDetails,
+                  icon: AssetPath.incomeIcon,
+                  onTap: () {},
+                ),
                 MoreOptionCard(
-                    text: AppString.myOrder,
-                    icon: AssetPath.bagIcon,
-                    onTap: () {},),
+                  text: AppString.myOrder,
+                  icon: AssetPath.bagIcon,
+                  onTap: () {
+                    context.pushNamed('my-order');
+                  },
+                ),
                 MoreOptionCard(
-                    text: AppString.notification,
-                    icon: AssetPath.notificationIcon,
-                    isNotification: true,
-                    notificationValue: '5',
-                    onTap: () {
-                     context.pushNamed('notification');
-                    
-                    },),
+                  text: AppString.notification,
+                  icon: AssetPath.notificationIcon,
+                  isNotification: true,
+                  notificationValue: '5',
+                  onTap: () {
+                    context.pushNamed('notification');
+                  },
+                ),
                 MoreOptionCard(
-                    text: AppString.inbox,
-                    icon: AssetPath.mailIcon,
-                    onTap: () {},),
+                  text: AppString.inbox,
+                  icon: AssetPath.mailIcon,
+                  onTap: () {
+                    context.pushNamed('inbox');
+                  },
+                ),
                 MoreOptionCard(
-                    text: AppString.aboutUs,
-                    icon: AssetPath.infoIcon,
-                    onTap: () {},),
+                  text: AppString.aboutUs,
+                  icon: AssetPath.infoIcon,
+                  onTap: () {
+                    context.pushNamed('about');
+                  },
+                ),
               ],
             ),
           ),

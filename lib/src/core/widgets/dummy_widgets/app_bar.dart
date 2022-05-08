@@ -9,12 +9,12 @@ import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_textstyles.dart';
 class AppCustomAppBar extends StatelessWidget {
   final String title;
   final bool isBackButton;
-  final String icon;
+  final String? icon;
   const AppCustomAppBar({
     Key? key,
     required this.title,
     required this.isBackButton,
-    required this.icon,
+     this.icon,
   }) : super(key: key);
 
   @override
@@ -42,7 +42,7 @@ class AppCustomAppBar extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          SvgPicture.asset(icon),
+          if(icon != null) SvgPicture.asset(icon!),
         ],
       ),
     );

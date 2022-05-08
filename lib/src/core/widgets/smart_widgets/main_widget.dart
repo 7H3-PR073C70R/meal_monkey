@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/bottom_nav_bar.dart';
 import 'package:meal_monkey/src/features/home/presentation/pages/home_page.dart';
+import 'package:meal_monkey/src/features/more/presentation/page/more_page.dart';
 
 class MainPage extends StatefulWidget {
   static const String path = '/main';
@@ -49,12 +50,5 @@ final List<Widget> pages = [
       child: Text('Page 4'),
     ),
   ),
-  Scaffold(
-    appBar: AppBar(
-      title: const Text('Meal Monkey'),
-    ),
-    body: const Center(
-      child: Text('Page 5'),
-    ),
-  ),
+ const MorePage(),
 ];
