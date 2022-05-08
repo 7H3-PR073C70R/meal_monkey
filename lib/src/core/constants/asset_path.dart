@@ -23,4 +23,5 @@ class AssetPath {
   static const payPalIcon = 'assets/icons/paypal.png';
   static const plusIcon = 'assets/icons/plus_icon.svg';
   static const visaIcon = 'assets/icons/visa.png';
+  static const orderComplete = 'assets/images/order_complete.png';
 }
