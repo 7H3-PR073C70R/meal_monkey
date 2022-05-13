@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meal_monkey/src/core/constants/app_colors.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/app_size.dart';
 import 'package:meal_monkey/src/core/widgets/dummy_widgets/button.dart';
-import 'package:meal_monkey/src/features/auth/otp/presentation/pages/widgets/otp_input.dart';
+import 'package:meal_monkey/src/features/auth/otp/presentation/widgets/otp_input.dart';
 
 class OtpScreen extends StatefulWidget {
   const OtpScreen({Key? key}) : super(key: key);
